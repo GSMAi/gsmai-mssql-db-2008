@@ -1,0 +1,68 @@
+13.05.2019 13:09:53	This log contains information about the import schema operation into project 'wi_master' on computer 'ESACHYK' by user 'esachyk'.
+13.05.2019 13:09:53	Import of database schema has started.
+13.05.2019 13:09:58	Gathering database options
+13.05.2019 13:09:58	Gathering users
+13.05.2019 13:09:58	Gathering roles
+13.05.2019 13:09:58	Gathering application roles
+13.05.2019 13:09:58	Gathering role memberships
+13.05.2019 13:09:58	Gathering filegroups
+13.05.2019 13:09:58	Gathering full-text catalogs
+13.05.2019 13:09:58	Gathering assemblies
+13.05.2019 13:09:58	Gathering certificates
+13.05.2019 13:09:58	Gathering asymmetric keys
+13.05.2019 13:09:58	Gathering symmetric keys
+13.05.2019 13:09:58	Gathering encrypted symmetric keys
+13.05.2019 13:09:58	Gathering schemas
+13.05.2019 13:09:58	Gathering XML schema collections
+13.05.2019 13:09:58	Gathering user-defined data types
+13.05.2019 13:09:58	Gathering user-defined types
+13.05.2019 13:09:58	Gathering table types
+13.05.2019 13:09:58	Gathering unique keys for table types
+13.05.2019 13:09:58	Gathering primary keys for table types
+13.05.2019 13:09:58	Gathering check constraints for table types
+13.05.2019 13:09:58	Gathering default constraints for table types
+13.05.2019 13:09:58	Gathering partition functions
+13.05.2019 13:09:58	Gathering partition schemes
+13.05.2019 13:09:58	Gathering functions
+13.05.2019 13:09:58	Gathering encrypted functions
+13.05.2019 13:09:58	Gathering aggregates
+13.05.2019 13:09:58	Gathering procedures
+13.05.2019 13:09:58	Gathering encrypted procedures
+13.05.2019 13:09:58	Gathering tables
+13.05.2019 13:09:59	Gathering primary keys
+13.05.2019 13:09:59	Gathering unique constraints
+13.05.2019 13:09:59	Gathering foreign keys
+13.05.2019 13:09:59	Gathering default constraints
+13.05.2019 13:09:59	Gathering check constraints
+13.05.2019 13:09:59	Gathering views
+13.05.2019 13:09:59	Gathering encrypted views
+13.05.2019 13:09:59	Gathering indexes
+13.05.2019 13:09:59	Gathering statistics
+13.05.2019 13:09:59	Gathering full-text index stoplists
+13.05.2019 13:09:59	Gathering full-text indexes
+13.05.2019 13:09:59	Gathering spatial indexes
+13.05.2019 13:09:59	Gathering XML indexes
+13.05.2019 13:09:59	Gathering encrypted triggers
+13.05.2019 13:09:59	Gathering triggers
+13.05.2019 13:09:59	Gathering encrypted and clr ddl triggers
+13.05.2019 13:09:59	Gathering ddl triggers
+13.05.2019 13:09:59	Gathering synonyms
+13.05.2019 13:09:59	Gathering defaults
+13.05.2019 13:09:59	Gathering data constraint uddt bindings
+13.05.2019 13:09:59	Gathering rules
+13.05.2019 13:09:59	Gathering data constraint uddt bindings
+13.05.2019 13:09:59	Gathering message types
+13.05.2019 13:09:59	Gathering queues
+13.05.2019 13:09:59	Gathering contracts
+13.05.2019 13:09:59	Gathering services
+13.05.2019 13:09:59	Gathering event notifications
+13.05.2019 13:09:59	Gathering remote service bindings
+13.05.2019 13:09:59	Gathering broker priorities
+13.05.2019 13:09:59	Gathering signatures
+13.05.2019 13:09:59	Gathering data compression options
+13.05.2019 13:09:59	Gathering extended properties
+13.05.2019 13:10:00	Scanning project for duplicate elements
+13.05.2019 13:10:00	Finished duplicate element processing
+13.05.2019 13:10:01	Finished importing database.
+13.05.2019 13:10:01	A summary of the import was saved to the following location: E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_master\Import Schema Logs\wi_master_20190513100953.log
+13.05.2019 13:10:01	Click Finish to continue...

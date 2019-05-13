@@ -1,0 +1,4 @@
+﻿CREATE FULLTEXT CATALOG [search_documents]
+    WITH ACCENT_SENSITIVITY = OFF
+    AUTHORIZATION [dbo];
+

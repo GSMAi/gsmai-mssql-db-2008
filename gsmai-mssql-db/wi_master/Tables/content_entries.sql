@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[content_entries] (
+    [id]                             INT            IDENTITY (576, 1) NOT NULL,
+    [type_id]                        INT            CONSTRAINT [DF_content_entries_type_id] DEFAULT ((1574)) NOT NULL,
+    [type_entity_id]                 INT            CONSTRAINT [DF_content_entries_type_entity_id] DEFAULT ((1)) NOT NULL,
+    [title]                          NVARCHAR (512) NOT NULL,
+    [subtitle]                       NVARCHAR (512) NULL,
+    [permalink]                      NVARCHAR (512) NOT NULL,
+    [preview]                        NVARCHAR (MAX) NULL,
+    [body]                           NVARCHAR (MAX) NULL,
+    [content_type]                   NVARCHAR (256) CONSTRAINT [DF_content_entries_content_type] DEFAULT (N'text/x-markdown') NOT NULL,
+    [status]                         TINYINT        CONSTRAINT [DF_content_entries_status] DEFAULT ((1)) NOT NULL,
+    [has_documents]                  BIT            CONSTRAINT [DF_content_entries_has_documents] DEFAULT ((0)) NOT NULL,
+    [documents_require_subscription] BIT            CONSTRAINT [DF_content_entries_requires_subscription] DEFAULT ((0)) NOT NULL,
+    [thumbnail_document_id]          INT            NULL,
+    [thumbnail_is_landscape]         BIT            CONSTRAINT [DF_content_entries_thumbnail_is_landscape] DEFAULT ((0)) NULL,
+    [is_featured]                    BIT            CONSTRAINT [DF_content_entries_is_featured] DEFAULT ((0)) NOT NULL,
+    [is_hidden]                      BIT            CONSTRAINT [DF_content_entries_is_hidden] DEFAULT ((0)) NOT NULL,
+    [is_stub]                        BIT            CONSTRAINT [DF_content_entries_stub] DEFAULT ((0)) NOT NULL,
+    [published_on]                   DATETIME       CONSTRAINT [DF_content_entries_published_on] DEFAULT (getdate()) NOT NULL,
+    [created_on]                     DATETIME       CONSTRAINT [DF_content_entries_created_on] DEFAULT (getdate()) NOT NULL,
+    [created_by]                     INT            CONSTRAINT [DF_content_entries_created_by] DEFAULT ((0)) NOT NULL,
+    [last_update_on]                 DATETIME       CONSTRAINT [DF_content_entries_last_update_on] DEFAULT (getdate()) NOT NULL,
+    [last_update_by]                 INT            CONSTRAINT [DF_content_entries_last_update_by] DEFAULT ((0)) NOT NULL,
+    [confluence_id]                  INT            DEFAULT ((0)) NOT NULL,
+    CONSTRAINT [PK_content_entries] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+

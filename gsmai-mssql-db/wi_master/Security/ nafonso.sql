@@ -1,0 +1,2 @@
+﻿CREATE USER [ nafonso] WITHOUT LOGIN;
+

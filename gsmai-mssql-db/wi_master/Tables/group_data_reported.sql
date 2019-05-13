@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[group_data_reported] (
+    [ID]                 INT           IDENTITY (1, 1) NOT NULL,
+    [fk_organisation_id] INT           NULL,
+    [organisation_name]  VARCHAR (50)  NULL,
+    [fk_metric_id]       INT           NULL,
+    [metric_name]        VARCHAR (50)  NULL,
+    [fk_attribute_id]    INT           NULL,
+    [attribute_name]     VARCHAR (50)  NULL,
+    [fk_status_id]       INT           NULL,
+    [fk_privacy_id]      INT           NULL,
+    [date]               DATE          NULL,
+    [date_type]          VARCHAR (1)   NULL,
+    [val]                FLOAT (53)    NULL,
+    [fk_currency_id]     INT           NULL,
+    [iso_code]           VARCHAR (10)  NULL,
+    [fk_source_id]       INT           NULL,
+    [source_name]        VARCHAR (50)  NULL,
+    [fk_confidence_id]   INT           NULL,
+    [confidence_name]    VARCHAR (50)  NULL,
+    [archive]            INT           NULL,
+    [location]           VARCHAR (200) NULL,
+    [definition]         VARCHAR (300) NULL,
+    [notes]              VARCHAR (500) NULL,
+    [created]            DATE          NULL,
+    CONSTRAINT [PK_group_data_reported] PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+

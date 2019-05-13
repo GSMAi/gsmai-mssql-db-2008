@@ -1,0 +1,581 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>wi_master</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{ea8a362e-fee7-495b-9b3e-4ef143151e53}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql100DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>wi_master</RootNamespace>
+    <AssemblyName>wi_master</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>Latin1_General_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Tables\" />
+    <Folder Include="Views\" />
+    <Folder Include="Storage\" />
+    <Folder Include="Security\" />
+    <Folder Include="Functions\" />
+    <Folder Include="Stored Procedures\" />
+    <Folder Include="Database Triggers\" />
+    <Folder Include="User Defined Types\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\zone_link.sql" />
+    <Build Include="Tables\data_sets_master_website_link.sql" />
+    <Build Include="Tables\zones.sql" />
+    <Build Include="Tables\group_data_view_link.sql" />
+    <Build Include="Tables\deployment_zone_link.sql" />
+    <Build Include="Tables\group_data_reported.sql" />
+    <Build Include="Tables\group_data_view_link_history.sql" />
+    <Build Include="Tables\metric_families.sql" />
+    <Build Include="Tables\content_authors.sql" />
+    <Build Include="Tables\organisation_data.sql" />
+    <Build Include="Tables\organisation_data_metadata.sql" />
+    <Build Include="Tables\_backup_ds_zone_data.sql" />
+    <Build Include="Tables\metric_family_link.sql" />
+    <Build Include="Tables\news.sql" />
+    <Build Include="Tables\content_entry_author_link.sql" />
+    <Build Include="Tables\_backup_dc_zone_data.sql" />
+    <Build Include="Tables\content_entry_entity_link.sql" />
+    <Build Include="Tables\content_entry_tag_link.sql" />
+    <Build Include="Tables\_dc_dashboard_zone_data.sql" />
+    <Build Include="Tables\document_entity_link.sql" />
+    <Build Include="Tables\organisation_location_link.sql" />
+    <Build Include="Tables\document_tag_link.sql" />
+    <Build Include="Tables\definitions.sql" />
+    <Build Include="Tables\_backup_dc_organisation_data.sql" />
+    <Build Include="Tables\organisations.sql" />
+    <Build Include="Tables\organisation_permission_link.sql" />
+    <Build Include="Tables\confidence.sql" />
+    <Build Include="Tables\organisations_copy.sql" />
+    <Build Include="Tables\sp_run_log.sql" />
+    <Build Include="Tables\sp_run_error_log.sql" />
+    <Build Include="Tables\flag_ds_link.sql" />
+    <Build Include="Tables\flags.sql" />
+    <Build Include="Tables\industry_events.sql" />
+    <Build Include="Tables\attribute_family_link.sql" />
+    <Build Include="Tables\zone_data_flags_link.sql" />
+    <Build Include="Tables\_data_sets.sql" />
+    <Build Include="Tables\test_links_ids.sql" />
+    <Build Include="Tables\permissions.sql" />
+    <Build Include="Tables\ic_organisation_link.sql" />
+    <Build Include="Tables\privacy.sql" />
+    <Build Include="Tables\dc_zone_data_sets.sql" />
+    <Build Include="Tables\forecasting_accuracy.sql" />
+    <Build Include="Tables\log_reporting.sql" />
+    <Build Include="Tables\wiki_categories.sql" />
+    <Build Include="Tables\ds_membership_data.sql" />
+    <Build Include="Tables\data_views.sql" />
+    <Build Include="Tables\registrations.sql" />
+    <Build Include="Tables\content_entry_document_link.sql" />
+    <Build Include="Tables\content_entry_links.sql" />
+    <Build Include="Tables\organisation_data_view_link.sql" />
+    <Build Include="Tables\report_favourites.sql" />
+    <Build Include="Tables\content_entry_permission_link.sql" />
+    <Build Include="Tables\coverage_maps.sql" />
+    <Build Include="Tables\auction_awards.sql" />
+    <Build Include="Tables\documents_tmp.sql" />
+    <Build Include="Tables\user_logs.sql" />
+    <Build Include="Tables\report_fk_link.sql" />
+    <Build Include="Tables\jobs.sql" />
+    <Build Include="Tables\_backup_ds_organisation_data.sql" />
+    <Build Include="Tables\blog_entries.sql" />
+    <Build Include="Tables\report_tracking.sql" />
+    <Build Include="Tables\types.sql" />
+    <Build Include="Tables\auctions.sql" />
+    <Build Include="Tables\reports.sql" />
+    <Build Include="Tables\organisation_data_tmp.sql" />
+    <Build Include="Tables\currency_rates_copy.sql" />
+    <Build Include="Tables\attribute_dimval_legacy_link.sql" />
+    <Build Include="Tables\deployment_organisation_link.sql" />
+    <Build Include="Tables\sp_run_tracker.sql" />
+    <Build Include="Tables\sector_field_link.sql" />
+    <Build Include="Tables\blog_entry_tag_link.sql" />
+    <Build Include="Tables\result_forecast_upsert.sql" />
+    <Build Include="Tables\metrics.sql" />
+    <Build Include="Tables\deployment_sector_link.sql" />
+    <Build Include="Tables\blog_entry_user_link.sql" />
+    <Build Include="Tables\sessions.sql" />
+    <Build Include="Tables\roles.sql" />
+    <Build Include="Tables\flag_organisation_link.sql" />
+    <Build Include="Tables\currency_rates_bck_20170918.sql" />
+    <Build Include="Tables\df_service_data.sql" />
+    <Build Include="Tables\currency_rates.sql" />
+    <Build Include="Tables\users.sql" />
+    <Build Include="Tables\metric_import_link.sql" />
+    <Build Include="Tables\organisation_data_view_link_history.sql" />
+    <Build Include="Tables\document_fulltext.sql" />
+    <Build Include="Tables\source_organisation_link.sql" />
+    <Build Include="Tables\auction_frequency_link.sql" />
+    <Build Include="Tables\currencies.sql" />
+    <Build Include="Tables\auction_service_link.sql" />
+    <Build Include="Tables\zone_data_metadata.sql" />
+    <Build Include="Tables\data_sets_master.sql" />
+    <Build Include="Tables\subscription_domain_link.sql" />
+    <Build Include="Tables\data_sets_master_alternative.sql" />
+    <Build Include="Tables\document_legacy_mapping.sql" />
+    <Build Include="Tables\log_data_events.sql" />
+    <Build Include="Tables\user_organisation_link.sql" />
+    <Build Include="Tables\zone_data.sql" />
+    <Build Include="Tables\surveys.sql" />
+    <Build Include="Tables\attributes.sql" />
+    <Build Include="Tables\dc_group_data_sets.sql" />
+    <Build Include="Tables\document_permission_link.sql" />
+    <Build Include="Tables\zone_benchmark_link.sql" />
+    <Build Include="Tables\type_permission_link.sql" />
+    <Build Include="Tables\document_tracking.sql" />
+    <Build Include="Tables\log_forecasting.sql" />
+    <Build Include="Tables\_backup_dc_group_data.sql" />
+    <Build Include="Tables\user_email_verification.sql" />
+    <Build Include="Tables\documents.sql" />
+    <Build Include="Tables\_backup_ds_group_data.sql" />
+    <Build Include="Tables\user_password_resets.sql" />
+    <Build Include="Tables\currency_rates_bkp_20180110.sql" />
+    <Build Include="Tables\currency_rates_test_20180110.sql" />
+    <Build Include="Tables\units.sql" />
+    <Build Include="Tables\zone_data_view_link.sql" />
+    <Build Include="Tables\user_permissions_link.sql" />
+    <Build Include="Tables\content_entries.sql" />
+    <Build Include="Tables\mvno_group_link.sql" />
+    <Build Include="Tables\mvno_host_link.sql" />
+    <Build Include="Tables\zone_data_view_link_history.sql" />
+    <Build Include="Tables\user_preferences.sql" />
+    <Build Include="Tables\ds_mvnos.sql" />
+    <Build Include="Tables\api_keys.sql" />
+    <Build Include="Tables\ds_group_ownership.sql" />
+    <Build Include="Tables\ds_survey_data.sql" />
+    <Build Include="Tables\favourite_user_link.sql" />
+    <Build Include="Tables\data_sets_views_link.sql" />
+    <Build Include="Tables\feed.sql" />
+    <Build Include="Tables\currency_zone_link.sql" />
+    <Build Include="Tables\ic_network_tadig_codes.sql" />
+    <Build Include="Tables\subscriptions.sql" />
+    <Build Include="Tables\network_frequency_link.sql" />
+    <Build Include="Tables\user_registrations.sql" />
+    <Build Include="Tables\organisation_data_flags_link.sql" />
+    <Build Include="Tables\networks.sql" />
+    <Build Include="Tables\organisation_zone_link.sql" />
+    <Build Include="Tables\query_logs.sql" />
+    <Build Include="Tables\cache.sql" />
+    <Build Include="Tables\wikis.sql" />
+    <Build Include="Tables\feedback.sql" />
+    <Build Include="Tables\data_sp_run_error_log.sql" />
+    <Build Include="Tables\_tmp_radar_users.sql" />
+    <Build Include="Tables\ic_network_link.sql" />
+    <Build Include="Tables\zone_currency_link.sql" />
+    <Build Include="Tables\deployments.sql" />
+    <Build Include="Tables\ic_network_roaming_relationship_link.sql" />
+    <Build Include="Tables\salesforce_zone_link.sql" />
+    <Build Include="Tables\ic_technology_link.sql" />
+    <Build Include="Tables\fields.sql" />
+    <Build Include="Tables\dc_organisation_data_sets.sql" />
+    <Build Include="Tables\sources.sql" />
+    <Build Include="Tables\sf_zone_link.sql" />
+    <Build Include="Tables\group_data.sql" />
+    <Build Include="Tables\event_logs.sql" />
+    <Build Include="Tables\log_model_versions.sql" />
+    <Build Include="Tables\status.sql" />
+    <Build Include="Tables\files.sql" />
+    <Build Include="Tables\feed_entity_link.sql" />
+    <Build Include="Tables\wiki_entries.sql" />
+    <Build Include="Tables\feed_tag_link.sql" />
+    <Build Include="Tables\tags.sql" />
+    <Build Include="Tables\ds_service_data.sql" />
+    <Build Include="Tables\invitations.sql" />
+    <Build Include="Tables\search.sql" />
+    <Build Include="Tables\organisation_events.sql" />
+    <Build Include="Views\_backup_view_dc_group_data.sql" />
+    <Build Include="Views\dc_group_data_val_proportionate.sql" />
+    <Build Include="Views\dc_group_data_val_sum.sql" />
+    <Build Include="Views\dc_group_data.sql" />
+    <Build Include="Views\data_financials_local_currencies.sql" />
+    <Build Include="Views\_networks_data.sql" />
+    <Build Include="Views\data_sets.sql" />
+    <Build Include="Views\_latest_ranked_reported_data.sql" />
+    <Build Include="Views\_missing_operator_reported_data.sql" />
+    <Build Include="Views\latest_organisation_launch_dates.sql" />
+    <Build Include="Views\dc_organisation_data.sql" />
+    <Build Include="Views\multiplay_input_ol.sql" />
+    <Build Include="Views\dc_zone_data.sql" />
+    <Build Include="Views\ds_organisation_data.sql" />
+    <Build Include="Views\ds_zone_data.sql" />
+    <Build Include="Views\_merged_reported_forecasted_quarter_figures.sql" />
+    <Build Include="Views\workflow_data_history_simple_view.sql" />
+    <Build Include="Views\_latest_ranked_zone_forecasted_data.sql" />
+    <Build Include="Views\view_organisation_data_reported_forecast.sql" />
+    <Build Include="Views\dc_dashboard_zone_data.sql" />
+    <Build Include="Views\_research_download_counts.sql" />
+    <Build Include="Views\ds_group_data.sql" />
+    <Build Include="Views\multiplay_input_cl.sql" />
+    <Build Include="Views\workflow_data_import_approvals_view.sql" />
+    <Build Include="Views\_latest_ranked_zone_data.sql" />
+    <Build Include="Views\_missing_zone_forecast_data.sql" />
+    <Build Include="Views\_latest_ranked_forecast_data.sql" />
+    <Build Include="Views\view_zone_data_reported.sql" />
+    <Build Include="Views\_backup_views_dc_organisation_data.sql" />
+    <Build Include="Views\_latest_ranked_forecast_quarterly_data.sql" />
+    <Build Include="Views\_latest_ranked_reported_quarterly_data.sql" />
+    <Build Include="Views\jira_feeds_view.sql" />
+    <Build Include="Views\_latest_ranked_zone_quarterly_data.sql" />
+    <Build Include="Views\_backup_views_dc_zone_data.sql" />
+    <Build Include="Views\jira_network_list.sql" />
+    <Build Include="Views\jira_organisation_zones_view.sql" />
+    <Build Include="Views\_latest_ranked_zone_forecasted_quarterly_data.sql" />
+    <Build Include="Views\_merged_zone_reported_forecasted_quarter_figures.sql" />
+    <Build Include="Storage\search.sql" />
+    <Build Include="Storage\search_documents.sql" />
+    <Build Include="FullTextIndexes.sql" />
+    <Build Include="Security\db_executor.sql" />
+    <Build Include="Security\wi.sql" />
+    <Build Include="Security\gsmai-femto.sql" />
+    <Build Include="Security\gsmai-jira.sql" />
+    <Build Include="Security\gsmai-read-only.sql" />
+    <Build Include="Security\jgroves.sql" />
+    <Build Include="Security\jira_user.sql" />
+    <Build Include="Security\francesco.sql" />
+    <Build Include="Security\mcorral.sql" />
+    <Build Include="Security\calum.sql" />
+    <Build Include="Security\gzhang.sql" />
+    <Build Include="Security\joss.sql" />
+    <Build Include="Security\kavi.sql" />
+    <Build Include="Security\lee.sql" />
+    <Build Include="Security\cheka.sql" />
+    <Build Include="Security\mark.sql" />
+    <Build Include="Security\matthew.sql" />
+    <Build Include="Security\ nafonso.sql" />
+    <Build Include="Security\da_pavel.sql" />
+    <Build Include="Security\ashabelnikova.sql" />
+    <Build Include="Security\jstryjak.sql" />
+    <Build Include="Security\hguessous.sql" />
+    <Build Include="Security\nafonso.sql" />
+    <Build Include="Security\qsafikhani.sql" />
+    <Build Include="Security\gsmaigeneric.sql" />
+    <Build Include="Security\xpedros.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+    <Build Include="Functions\metric_is_currency_based.sql" />
+    <Build Include="Functions\is_leap_year.sql" />
+    <Build Include="Functions\current_calendar_quarter.sql" />
+    <Build Include="Functions\metric_is_decimal.sql" />
+    <Build Include="Functions\default_geoscheme_id.sql" />
+    <Build Include="Functions\current_reporting_quarter.sql" />
+    <Build Include="Functions\excel_serial_to_datetime.sql" />
+    <Build Include="Functions\safe_name_from_string.sql" />
+    <Build Include="Functions\datetime_to_excel_serial.sql" />
+    <Build Include="Functions\curve_fit_data.sql" />
+    <Build Include="Functions\curve_fit_coefficients.sql" />
+    <Build Include="Functions\curve_best_fit.sql" />
+    <Build Include="Functions\curve_fit_polynomial_coefficients.sql" />
+    <Build Include="Functions\curve_best_fit_coefficients_only.sql" />
+    <Build Include="Functions\php_unserialize.sql" />
+    <Build Include="Functions\remove_outliers.sql" />
+    <Build Include="Stored Procedures\merge_reported_forecasted_figures.sql" />
+    <Build Include="Stored Procedures\data_operators_events.sql" />
+    <Build Include="Stored Procedures\data_operators_ranking.sql" />
+    <Build Include="Stored Procedures\process_merge_data.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\process_switch_smartphones.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\aggregate_metric_from_service_data.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\process_switch_unique_subscribers.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\aggregate_metric_from_zone_data_weighted.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\process_update_currency_rates.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\aggregate_subscribers.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\process_calculate.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\aggregate_summed_currency_based_metric.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\process_merge_import_organisation_data.sql" />
+    <Build Include="Stored Procedures\aggregate_summed_currency_based_metric_from_quarterly_data.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\proc_upsert_group_data_view_link.sql" />
+    <Build Include="Stored Procedures\process_merge_import_organisation_forecast_data.sql" />
+    <Build Include="Stored Procedures\sp_WhoIsActive.sql" />
+    <Build Include="Stored Procedures\proc_upsert_group_forecast_upload.sql" />
+    <Build Include="Stored Procedures\process_merge_import_service_data.sql" />
+    <Build Include="Stored Procedures\process_merge_import_zone_data.sql" />
+    <Build Include="Stored Procedures\process_populate_search.sql" />
+    <Build Include="Stored Procedures\process_recache_dashboard_data.sql" />
+    <Build Include="Stored Procedures\api_counter.sql" />
+    <Build Include="Stored Procedures\api_currencies_in_use.sql" />
+    <Build Include="Stored Procedures\test_job.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\process_recache_group_data.sql" />
+    <Build Include="Stored Procedures\api_data.sql" />
+    <Build Include="Stored Procedures\calculate_absolute_from_percentage.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\revision_membership_data.sql" />
+    <Build Include="Stored Procedures\calculate_absolute_from_percentage_from_zone_data.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\calculate_mobile_internet_absolute_from_percentage_from_zone_data.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\collect_errors.sql" />
+    <Build Include="Stored Procedures\calculate_connections_families.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\process_merge_import_zone_forecast_data.sql" />
+    <Build Include="Stored Procedures\calculate_connections_subscribers.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\calculate_hhi.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\process_recache_organisation_data.sql" />
+    <Build Include="Stored Procedures\calculate_hy_fy_sum.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\process_recache_organisation_data_by_organisation.sql" />
+    <Build Include="Stored Procedures\proc_upsert_zone_reported_data_view_link.sql" />
+    <Build Include="Stored Procedures\proc_upsert_zone_reported_upload.sql" />
+    <Build Include="Stored Procedures\proc_upsert_organisation_reported_data_view_link.sql" />
+    <Build Include="Stored Procedures\process_recache_zone_data.sql" />
+    <Build Include="Stored Procedures\proc_upsert_organisation_reported_upload.sql" />
+    <Build Include="Stored Procedures\process_recalculate_smartphones.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\system_job_status.sql">
+      <AnsiNulls>Off</AnsiNulls>
+    </Build>
+    <Build Include="Stored Procedures\clear_backup_ds_tables.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\restore_ds_data_from_wi_backups.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\recache_dc_tables.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\calculate_moving_mean_from_zone_data.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\api_curve_fit.sql" />
+    <Build Include="Stored Procedures\calculate_product.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\calculate_normalised_splits.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\calculate_opex.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\backup_ds_tables.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\aggregate_metric_from_zone_data.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\proc_upsert_zone_data_view_link.sql" />
+    <Build Include="Stored Procedures\data_groups_data_empty.sql" />
+    <Build Include="Stored Procedures\data_markets_data_empy.sql" />
+    <Build Include="Stored Procedures\proc_upsert_zone_forecast_upload.sql" />
+    <Build Include="Stored Procedures\data_metrics_data_empty.sql" />
+    <Build Include="Stored Procedures\data_operators_data_empty.sql" />
+    <Build Include="Stored Procedures\test_proc_upsert_forecast_upload.sql" />
+    <Build Include="Stored Procedures\aggregate_connections.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\calculate_spectrum.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\calculate_sum.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\process_populate_report_metadata.sql" />
+    <Build Include="Stored Procedures\calculate_sum_by_flag.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\calculate_moving_mean.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\calculate_world_bank_metrics.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\process_create_hashes.sql" />
+    <Build Include="Stored Procedures\process_map_imports.sql" />
+    <Build Include="Stored Procedures\process_delete_duplicates.sql" />
+    <Build Include="Stored Procedures\process_legacy_map_mobile_internet_subscribers.sql" />
+    <Build Include="Stored Procedures\data_auctions.sql" />
+    <Build Include="Stored Procedures\process_legacy_map_m2m_connections.sql" />
+    <Build Include="Stored Procedures\data_auctions_alt.sql" />
+    <Build Include="Stored Procedures\process_legacy_map_dimvals.sql" />
+    <Build Include="Stored Procedures\data_auctions_competition.sql" />
+    <Build Include="Stored Procedures\process_legacy_hold_data.sql" />
+    <Build Include="Stored Procedures\data_auctions_pricing.sql" />
+    <Build Include="Stored Procedures\process_log_reported_data.sql" />
+    <Build Include="Stored Procedures\process_replicate_from_aws_rds_migration.sql" />
+    <Build Include="Stored Procedures\data_currencies.sql" />
+    <Build Include="Stored Procedures\data_groups.sql" />
+    <Build Include="Stored Procedures\calculate_difference.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\aggregate_currency_based_metric.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\data_groups_data.sql" />
+    <Build Include="Stored Procedures\data_groups_ownership.sql" />
+    <Build Include="Stored Procedures\process_remerge_data_since.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\data_groups_ranking.sql" />
+    <Build Include="Stored Procedures\data_markets.sql" />
+    <Build Include="Stored Procedures\data_markets_data.sql" />
+    <Build Include="Stored Procedures\data_markets_ranking.sql" />
+    <Build Include="Stored Procedures\data_metrics_data.sql" />
+    <Build Include="Stored Procedures\process_update_log_reporting.sql" />
+    <Build Include="Stored Procedures\proc_upsert_organisation_data_view_link.sql" />
+    <Build Include="Stored Procedures\proc_upsert_organisation_forecast_upload.sql" />
+    <Build Include="Stored Procedures\data_mvnos.sql" />
+    <Build Include="Stored Procedures\aggregate_groups.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\aggregate_metric.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\aggregate_metric_by_division.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\aggregate_metric_by_maximum_minimum.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\data_networks.sql" />
+    <Build Include="Stored Procedures\collect_data_insert_errors.sql" />
+    <Build Include="Stored Procedures\calculate_membership.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\data_networks_roaming.sql" />
+    <Build Include="Stored Procedures\data_operators.sql" />
+    <Build Include="Stored Procedures\calculate_product_quotient_pair.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\data_operators_data.sql" />
+    <Build Include="Stored Procedures\merge_zone_reported_forecasted_figures.sql" />
+    <Build Include="Stored Procedures\process_update_log_model_versions.sql" />
+    <Build Include="Database Triggers\rds_deny_backups_trigger.sql" />
+    <Build Include="User Defined Types\xy_coefficients.sql" />
+    <Build Include="User Defined Types\xy_data.sql" />
+    <Build Include="User Defined Types\iterator.sql" />
+    <Build Include="User Defined Types\ordered_iterator.sql" />
+    <Build Include="User Defined Types\organisation_data_links_type.sql" />
+    <Build Include="User Defined Types\organisation_data_upsert_result_type.sql" />
+    <Build Include="User Defined Types\organisation_data_type.sql" />
+    <Build Include="User Defined Types\zone_data_type.sql" />
+    <Build Include="User Defined Types\zone_data_links_type.sql" />
+    <Build Include="User Defined Types\group_data_links_type.sql" />
+    <Build Include="User Defined Types\group_data_type.sql" />
+    <Build Include="User Defined Types\organisation_reported_data_links_type.sql" />
+    <Build Include="User Defined Types\organisation_reported_data_type.sql" />
+    <Build Include="User Defined Types\zone_reported_data_type.sql" />
+    <Build Include="User Defined Types\zone_reported_data_links_type.sql" />
+    <Build Include="Security\gsma.sql" />
+  </ItemGroup>
+</Project>

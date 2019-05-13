@@ -1,0 +1,2 @@
+﻿CREATE USER [jgroves] WITHOUT LOGIN;
+

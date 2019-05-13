@@ -1,0 +1,2 @@
+﻿CREATE USER [cheka] WITHOUT LOGIN;
+
