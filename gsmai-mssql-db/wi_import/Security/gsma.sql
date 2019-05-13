@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [gsma]
+    AUTHORIZATION [dbo];
+

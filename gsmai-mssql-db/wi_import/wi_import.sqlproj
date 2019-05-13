@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>wi_import</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{cb928d24-50d6-4784-b137-c8e613f704ba}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql100DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>wi_import</RootNamespace>
+    <AssemblyName>wi_import</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>Latin1_General_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Tables\" />
+    <Folder Include="Security\" />
+    <Folder Include="Stored Procedures\" />
+    <Folder Include="Database Triggers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\cleaning.sql" />
+    <Build Include="Tables\currency_rates.sql" />
+    <Build Include="Tables\ds_organisation_forecast_data.sql" />
+    <Build Include="Tables\ds_service_data.sql" />
+    <Build Include="Tables\ds_zone_forecast_data.sql" />
+    <Build Include="Tables\flag_ds_link.sql" />
+    <Build Include="Tables\network_frequency_link.sql" />
+    <Build Include="Tables\networks.sql" />
+    <Build Include="Tables\source_file_ds_link.sql" />
+    <Build Include="Tables\source_files.sql" />
+    <Build Include="Tables\source_folders.sql" />
+    <Build Include="Tables\ds_membership_data.sql" />
+    <Build Include="Tables\ds_organisation_data.sql" />
+    <Build Include="Tables\ds_zone_data.sql" />
+    <Build Include="Tables\log_organisation_data_reporting.sql" />
+    <Build Include="Tables\log_zone_data_reporting.sql" />
+    <Build Include="Tables\reported_data.sql" />
+    <Build Include="Tables\forecast_data.sql" />
+    <Build Include="Tables\zone_reported_data.sql" />
+    <Build Include="Tables\zone_forecast_data.sql" />
+    <Build Include="Tables\organisation_data_all.sql" />
+    <Build Include="Security\wi.sql" />
+    <Build Include="Security\gsmai-femto.sql" />
+    <Build Include="Security\gsmai-jira.sql" />
+    <Build Include="Security\gsmai-read-only.sql" />
+    <Build Include="Security\jgroves.sql" />
+    <Build Include="Security\jira_user.sql" />
+    <Build Include="Security\francesco.sql" />
+    <Build Include="Security\mcorral.sql" />
+    <Build Include="Security\calum.sql" />
+    <Build Include="Security\gzhang.sql" />
+    <Build Include="Security\joss.sql" />
+    <Build Include="Security\kavi.sql" />
+    <Build Include="Security\lee.sql" />
+    <Build Include="Security\mark.sql" />
+    <Build Include="Security\matthew.sql" />
+    <Build Include="Security\ nafonso.sql" />
+    <Build Include="Security\ashabelnikova.sql" />
+    <Build Include="Security\hguessous.sql" />
+    <Build Include="Security\nafonso.sql" />
+    <Build Include="Security\qsafikhani.sql" />
+    <Build Include="Security\gsmaigeneric.sql" />
+    <Build Include="Security\xpedros.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+    <Build Include="Stored Procedures\process_create_hashes.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\process_map_imports.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\process_delete_duplicates.sql" />
+    <Build Include="Stored Procedures\process_legacy_map_mobile_internet_subscribers.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\process_legacy_map_m2m_connections.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\process_legacy_map_dimvals.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\process_legacy_hold_data.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Stored Procedures\process_log_reported_data.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Database Triggers\rds_deny_backups_trigger.sql" />
+    <Build Include="Security\gsma.sql" />
+    <Build Include="Security\gsmai.sql" />
+  </ItemGroup>
+</Project>
