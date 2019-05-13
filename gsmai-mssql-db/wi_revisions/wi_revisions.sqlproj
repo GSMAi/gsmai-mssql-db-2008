@@ -92,4 +92,7 @@
     <Build Include="Database Triggers\rds_deny_backups_trigger.sql" />
     <Build Include="Security\gsma.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="we_revisions.SchemaCompare.scmp" />
+  </ItemGroup>
 </Project>

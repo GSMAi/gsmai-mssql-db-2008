@@ -77,4 +77,7 @@
     <Build Include="Security\RoleMemberships.sql" />
     <Build Include="Database Triggers\rds_deny_backups_trigger.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="wi_backups.SchemaCompare.scmp" />
+  </ItemGroup>
 </Project>

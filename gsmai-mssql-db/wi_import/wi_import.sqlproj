@@ -142,4 +142,7 @@
     <Build Include="Security\gsma.sql" />
     <Build Include="Security\gsmai.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="wi_import.SchemaCompare.scmp" />
+  </ItemGroup>
 </Project>

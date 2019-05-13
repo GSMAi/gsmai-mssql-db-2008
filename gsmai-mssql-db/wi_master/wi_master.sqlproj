@@ -578,4 +578,7 @@
     <Build Include="User Defined Types\zone_reported_data_links_type.sql" />
     <Build Include="Security\gsma.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="wi_master.SchemaCompare.scmp" />
+  </ItemGroup>
 </Project>
