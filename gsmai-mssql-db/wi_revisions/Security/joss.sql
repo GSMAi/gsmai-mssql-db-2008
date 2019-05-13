@@ -1,0 +1,2 @@
+﻿CREATE USER [joss] WITHOUT LOGIN;
+
