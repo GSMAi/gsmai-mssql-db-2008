@@ -1,0 +1,9 @@
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_backups\bin\Debug\wi_backups.dacpac
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_backups\obj\Debug\Model.xml
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_backups\obj\Debug\refactor.xml
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_backups\obj\Debug\postdeploy.sql
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_backups\obj\Debug\predeploy.sql
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_backups\obj\Debug\wi_backups.dll
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_backups\obj\Debug\wi_backups.pdb
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_backups\bin\Debug\wi_backups.dll
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_backups\bin\Debug\wi_backups.pdb

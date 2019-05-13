@@ -71,10 +71,10 @@
     <Build Include="Tables\ds_group_ownership.sql" />
     <Build Include="Tables\ds_group_data.sql" />
     <Build Include="Tables\ds_service_data.sql" />
-    <Build Include="Security\wi.sql" />
-    <Build Include="Security\gsmai-femto.sql" />
-    <Build Include="Security\gsmaigeneric.sql" />
-    <Build Include="Security\RoleMemberships.sql" />
+    <None Include="Security\wi.sql" />
+    <None Include="Security\gsmai-femto.sql" />
+    <None Include="Security\gsmaigeneric.sql" />
+    <None Include="Security\RoleMemberships.sql" />
     <Build Include="Database Triggers\rds_deny_backups_trigger.sql" />
   </ItemGroup>
   <ItemGroup>
