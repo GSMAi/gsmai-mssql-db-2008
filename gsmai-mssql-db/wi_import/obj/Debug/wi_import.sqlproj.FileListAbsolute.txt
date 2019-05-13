@@ -1,0 +1,9 @@
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_import\bin\Debug\wi_import.dacpac
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_import\obj\Debug\Model.xml
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_import\obj\Debug\refactor.xml
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_import\obj\Debug\postdeploy.sql
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_import\obj\Debug\predeploy.sql
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_import\obj\Debug\wi_import.dll
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_import\obj\Debug\wi_import.pdb
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_import\bin\Debug\wi_import.dll
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_import\bin\Debug\wi_import.pdb
