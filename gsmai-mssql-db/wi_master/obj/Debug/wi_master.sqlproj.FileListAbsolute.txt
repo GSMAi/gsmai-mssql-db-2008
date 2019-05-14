@@ -1,0 +1,14 @@
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_master\bin\Debug\wi_master.dacpac
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_master\obj\Debug\Model.xml
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_master\obj\Debug\refactor.xml
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_master\obj\Debug\postdeploy.sql
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_master\obj\Debug\predeploy.sql
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_master\obj\Debug\wi_master.dll
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_master\obj\Debug\wi_master.pdb
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_master\obj\Debug\wi_master.sqlprojAssemblyReference.cache
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_master\bin\Debug\wi_master.dll
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_master\bin\Debug\wi_master.pdb
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_master\bin\Debug\wi_import.dll
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_master\bin\Debug\wi_import.pdb
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_master\bin\Debug\wi_import.dacpac
+E:\GSMA\gsmai-mssql-db-2008\gsmai-mssql-db\wi_master\obj\Debug\wi_master.sqlproj.CopyComplete
