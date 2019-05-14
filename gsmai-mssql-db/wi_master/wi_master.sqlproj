@@ -241,7 +241,7 @@
     <Build Include="Views\_networks_data.sql" />
     <Build Include="Views\data_sets.sql" />
     <Build Include="Views\_latest_ranked_reported_data.sql" />
-    <Build Include="Views\_missing_operator_reported_data.sql" />
+    <None Include="Views\_missing_operator_reported_data.sql" />
     <Build Include="Views\latest_organisation_launch_dates.sql" />
     <Build Include="Views\dc_organisation_data.sql" />
     <Build Include="Views\multiplay_input_ol.sql" />
@@ -258,7 +258,7 @@
     <Build Include="Views\multiplay_input_cl.sql" />
     <Build Include="Views\workflow_data_import_approvals_view.sql" />
     <Build Include="Views\_latest_ranked_zone_data.sql" />
-    <Build Include="Views\_missing_zone_forecast_data.sql" />
+    <None Include="Views\_missing_zone_forecast_data.sql" />
     <Build Include="Views\_latest_ranked_forecast_data.sql" />
     <Build Include="Views\view_zone_data_reported.sql" />
     <Build Include="Views\_backup_views_dc_organisation_data.sql" />
@@ -274,33 +274,33 @@
     <Build Include="Storage\search.sql" />
     <Build Include="Storage\search_documents.sql" />
     <Build Include="FullTextIndexes.sql" />
-    <Build Include="Security\db_executor.sql" />
-    <Build Include="Security\wi.sql" />
-    <Build Include="Security\gsmai-femto.sql" />
-    <Build Include="Security\gsmai-jira.sql" />
-    <Build Include="Security\gsmai-read-only.sql" />
-    <Build Include="Security\jgroves.sql" />
-    <Build Include="Security\jira_user.sql" />
-    <Build Include="Security\francesco.sql" />
-    <Build Include="Security\mcorral.sql" />
-    <Build Include="Security\calum.sql" />
-    <Build Include="Security\gzhang.sql" />
-    <Build Include="Security\joss.sql" />
-    <Build Include="Security\kavi.sql" />
-    <Build Include="Security\lee.sql" />
-    <Build Include="Security\cheka.sql" />
-    <Build Include="Security\mark.sql" />
-    <Build Include="Security\matthew.sql" />
-    <Build Include="Security\ nafonso.sql" />
-    <Build Include="Security\da_pavel.sql" />
-    <Build Include="Security\ashabelnikova.sql" />
-    <Build Include="Security\jstryjak.sql" />
-    <Build Include="Security\hguessous.sql" />
-    <Build Include="Security\nafonso.sql" />
-    <Build Include="Security\qsafikhani.sql" />
-    <Build Include="Security\gsmaigeneric.sql" />
-    <Build Include="Security\xpedros.sql" />
-    <Build Include="Security\RoleMemberships.sql" />
+    <None Include="Security\db_executor.sql" />
+    <None Include="Security\wi.sql" />
+    <None Include="Security\gsmai-femto.sql" />
+    <None Include="Security\gsmai-jira.sql" />
+    <None Include="Security\gsmai-read-only.sql" />
+    <None Include="Security\jgroves.sql" />
+    <None Include="Security\jira_user.sql" />
+    <None Include="Security\francesco.sql" />
+    <None Include="Security\mcorral.sql" />
+    <None Include="Security\calum.sql" />
+    <None Include="Security\gzhang.sql" />
+    <None Include="Security\joss.sql" />
+    <None Include="Security\kavi.sql" />
+    <None Include="Security\lee.sql" />
+    <None Include="Security\cheka.sql" />
+    <None Include="Security\mark.sql" />
+    <None Include="Security\matthew.sql" />
+    <None Include="Security\ nafonso.sql" />
+    <None Include="Security\da_pavel.sql" />
+    <None Include="Security\ashabelnikova.sql" />
+    <None Include="Security\jstryjak.sql" />
+    <None Include="Security\hguessous.sql" />
+    <None Include="Security\nafonso.sql" />
+    <None Include="Security\qsafikhani.sql" />
+    <None Include="Security\gsmaigeneric.sql" />
+    <None Include="Security\xpedros.sql" />
+    <None Include="Security\RoleMemberships.sql" />
     <Build Include="Functions\metric_is_currency_based.sql" />
     <Build Include="Functions\is_leap_year.sql" />
     <Build Include="Functions\current_calendar_quarter.sql" />
@@ -328,47 +328,47 @@
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
     </Build>
-    <Build Include="Stored Procedures\aggregate_metric_from_service_data.sql">
+    <None Include="Stored Procedures\aggregate_metric_from_service_data.sql">
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
-    </Build>
-    <Build Include="Stored Procedures\process_switch_unique_subscribers.sql">
+    </None>
+    <None Include="Stored Procedures\process_switch_unique_subscribers.sql">
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
-    </Build>
-    <Build Include="Stored Procedures\aggregate_metric_from_zone_data_weighted.sql">
+    </None>
+    <None Include="Stored Procedures\aggregate_metric_from_zone_data_weighted.sql">
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
-    </Build>
+    </None>
     <Build Include="Stored Procedures\process_update_currency_rates.sql">
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
     </Build>
-    <Build Include="Stored Procedures\aggregate_subscribers.sql">
+    <None Include="Stored Procedures\aggregate_subscribers.sql">
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
-    </Build>
-    <Build Include="Stored Procedures\process_calculate.sql">
+    </None>
+    <None Include="Stored Procedures\process_calculate.sql">
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
-    </Build>
-    <Build Include="Stored Procedures\aggregate_summed_currency_based_metric.sql">
+    </None>
+    <None Include="Stored Procedures\aggregate_summed_currency_based_metric.sql">
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
-    </Build>
+    </None>
     <Build Include="Stored Procedures\process_merge_import_organisation_data.sql" />
-    <Build Include="Stored Procedures\aggregate_summed_currency_based_metric_from_quarterly_data.sql">
+    <None Include="Stored Procedures\aggregate_summed_currency_based_metric_from_quarterly_data.sql">
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
-    </Build>
+    </None>
     <Build Include="Stored Procedures\proc_upsert_group_data_view_link.sql" />
     <Build Include="Stored Procedures\process_merge_import_organisation_forecast_data.sql" />
     <Build Include="Stored Procedures\sp_WhoIsActive.sql" />
     <Build Include="Stored Procedures\proc_upsert_group_forecast_upload.sql" />
     <Build Include="Stored Procedures\process_merge_import_service_data.sql" />
-    <Build Include="Stored Procedures\process_merge_import_zone_data.sql" />
+    <None Include="Stored Procedures\process_merge_import_zone_data.sql" />
     <Build Include="Stored Procedures\process_populate_search.sql" />
-    <Build Include="Stored Procedures\process_recache_dashboard_data.sql" />
+    <None Include="Stored Procedures\process_recache_dashboard_data.sql" />
     <Build Include="Stored Procedures\api_counter.sql" />
     <Build Include="Stored Procedures\api_currencies_in_use.sql" />
     <Build Include="Stored Procedures\test_job.sql">
@@ -382,43 +382,43 @@
       <QuotedIdentifier>Off</QuotedIdentifier>
     </Build>
     <Build Include="Stored Procedures\revision_membership_data.sql" />
-    <Build Include="Stored Procedures\calculate_absolute_from_percentage_from_zone_data.sql">
+    <None Include="Stored Procedures\calculate_absolute_from_percentage_from_zone_data.sql">
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
-    </Build>
-    <Build Include="Stored Procedures\calculate_mobile_internet_absolute_from_percentage_from_zone_data.sql">
+    </None>
+    <None Include="Stored Procedures\calculate_mobile_internet_absolute_from_percentage_from_zone_data.sql">
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
-    </Build>
+    </None>
     <Build Include="Stored Procedures\collect_errors.sql" />
     <Build Include="Stored Procedures\calculate_connections_families.sql">
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
     </Build>
-    <Build Include="Stored Procedures\process_merge_import_zone_forecast_data.sql" />
-    <Build Include="Stored Procedures\calculate_connections_subscribers.sql">
+    <None Include="Stored Procedures\process_merge_import_zone_forecast_data.sql" />
+    <None Include="Stored Procedures\calculate_connections_subscribers.sql">
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
-    </Build>
-    <Build Include="Stored Procedures\calculate_hhi.sql">
+    </None>
+    <None Include="Stored Procedures\calculate_hhi.sql">
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
-    </Build>
-    <Build Include="Stored Procedures\process_recache_organisation_data.sql" />
+    </None>
+    <None Include="Stored Procedures\process_recache_organisation_data.sql" />
     <Build Include="Stored Procedures\calculate_hy_fy_sum.sql">
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
     </Build>
-    <Build Include="Stored Procedures\process_recache_organisation_data_by_organisation.sql" />
+    <None Include="Stored Procedures\process_recache_organisation_data_by_organisation.sql" />
     <Build Include="Stored Procedures\proc_upsert_zone_reported_data_view_link.sql" />
     <Build Include="Stored Procedures\proc_upsert_zone_reported_upload.sql" />
     <Build Include="Stored Procedures\proc_upsert_organisation_reported_data_view_link.sql" />
-    <Build Include="Stored Procedures\process_recache_zone_data.sql" />
+    <None Include="Stored Procedures\process_recache_zone_data.sql" />
     <Build Include="Stored Procedures\proc_upsert_organisation_reported_upload.sql" />
-    <Build Include="Stored Procedures\process_recalculate_smartphones.sql">
+    <None Include="Stored Procedures\process_recalculate_smartphones.sql">
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
-    </Build>
+    </None>
     <Build Include="Stored Procedures\system_job_status.sql">
       <AnsiNulls>Off</AnsiNulls>
     </Build>
@@ -434,10 +434,10 @@
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
     </Build>
-    <Build Include="Stored Procedures\calculate_moving_mean_from_zone_data.sql">
+    <None Include="Stored Procedures\calculate_moving_mean_from_zone_data.sql">
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
-    </Build>
+    </None>
     <Build Include="Stored Procedures\api_curve_fit.sql" />
     <Build Include="Stored Procedures\calculate_product.sql">
       <AnsiNulls>Off</AnsiNulls>
@@ -455,10 +455,10 @@
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
     </Build>
-    <Build Include="Stored Procedures\aggregate_metric_from_zone_data.sql">
+    <None Include="Stored Procedures\aggregate_metric_from_zone_data.sql">
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
-    </Build>
+    </None>
     <Build Include="Stored Procedures\proc_upsert_zone_data_view_link.sql" />
     <Build Include="Stored Procedures\data_groups_data_empty.sql" />
     <Build Include="Stored Procedures\data_markets_data_empy.sql" />
@@ -466,10 +466,10 @@
     <Build Include="Stored Procedures\data_metrics_data_empty.sql" />
     <Build Include="Stored Procedures\data_operators_data_empty.sql" />
     <Build Include="Stored Procedures\test_proc_upsert_forecast_upload.sql" />
-    <Build Include="Stored Procedures\aggregate_connections.sql">
+    <None Include="Stored Procedures\aggregate_connections.sql">
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
-    </Build>
+    </None>
     <Build Include="Stored Procedures\calculate_spectrum.sql">
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
@@ -487,10 +487,10 @@
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
     </Build>
-    <Build Include="Stored Procedures\calculate_world_bank_metrics.sql">
+    <None Include="Stored Procedures\calculate_world_bank_metrics.sql">
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
-    </Build>
+    </None>
     <Build Include="Stored Procedures\process_create_hashes.sql" />
     <Build Include="Stored Procedures\process_map_imports.sql" />
     <Build Include="Stored Procedures\process_delete_duplicates.sql" />
@@ -510,10 +510,10 @@
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
     </Build>
-    <Build Include="Stored Procedures\aggregate_currency_based_metric.sql">
+    <None Include="Stored Procedures\aggregate_currency_based_metric.sql">
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
-    </Build>
+    </None>
     <Build Include="Stored Procedures\data_groups_data.sql" />
     <Build Include="Stored Procedures\data_groups_ownership.sql" />
     <Build Include="Stored Procedures\process_remerge_data_since.sql">
@@ -533,18 +533,18 @@
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
     </Build>
-    <Build Include="Stored Procedures\aggregate_metric.sql">
+    <None Include="Stored Procedures\aggregate_metric.sql">
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
-    </Build>
-    <Build Include="Stored Procedures\aggregate_metric_by_division.sql">
+    </None>
+    <None Include="Stored Procedures\aggregate_metric_by_division.sql">
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
-    </Build>
-    <Build Include="Stored Procedures\aggregate_metric_by_maximum_minimum.sql">
+    </None>
+    <None Include="Stored Procedures\aggregate_metric_by_maximum_minimum.sql">
       <AnsiNulls>Off</AnsiNulls>
       <QuotedIdentifier>Off</QuotedIdentifier>
-    </Build>
+    </None>
     <Build Include="Stored Procedures\data_networks.sql" />
     <Build Include="Stored Procedures\collect_data_insert_errors.sql" />
     <Build Include="Stored Procedures\calculate_membership.sql">
@@ -580,5 +580,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="wi_master.SchemaCompare.scmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\wi_import\wi_import.sqlproj">
+      <Name>wi_import</Name>
+      <Project>{cb928d24-50d6-4784-b137-c8e613f704ba}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>wi_import</DatabaseSqlCmdVariable>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <SqlCmdVariable Include="wi_import">
+      <DefaultValue>wi_import</DefaultValue>
+      <Value>$(SqlCmdVar__1)</Value>
+    </SqlCmdVariable>
   </ItemGroup>
 </Project>
