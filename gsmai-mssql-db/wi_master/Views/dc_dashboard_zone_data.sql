@@ -12,9 +12,9 @@ select zd.id,
 	zd.fk_confidence_id as confidence_id,
 	GETDATE() as last_updated_on,
 	0 as last_updated_by
-from wi_master.dbo.zone_data_view_link as zvl
-left join wi_master.dbo.zone_data as zd on zd.id = zvl.fk_zone_data_id
-left join wi_master.dbo.zones as z on z.id = zd.fk_zone_id
+from dbo.zone_data_view_link as zvl
+left join dbo.zone_data as zd on zd.id = zvl.fk_zone_data_id
+left join dbo.zones as z on z.id = zd.fk_zone_id
 left join metrics as m ON m.id=zd.fk_metric_id
 where zvl.fk_data_view_id = 3
 and z.type_id = 10

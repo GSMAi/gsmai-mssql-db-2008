@@ -22,7 +22,7 @@
       ,[location]
       ,[last_update_on]
       ,[last_update_by]
-  FROM [wi_master].[dbo].[dc_group_data_val_sum]
+  FROM [dbo].[dc_group_data_val_sum]
 
 
 union all
@@ -51,4 +51,4 @@ select
       ,[location]
       ,[last_update_on]
       ,[last_update_by]
-  FROM [wi_master].[dbo].[dc_group_data_val_proportionate];
+  FROM [dbo].[dc_group_data_val_proportionate];

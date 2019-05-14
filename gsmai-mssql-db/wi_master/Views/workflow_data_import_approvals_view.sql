@@ -13,7 +13,7 @@
 		ds.date_type orgDataDataType,
 		ds.date orgDataDate
 
-FROM	wi_import.dbo.ds_organisation_data ds INNER JOIN
+FROM	[$(wi_import)].dbo.ds_organisation_data ds INNER JOIN
 		organisations o ON ds.organisation_id = o.id INNER JOIN
 		organisation_zone_link oz ON o.id = oz.organisation_id INNER JOIN
 		zones z ON oz.zone_id = z.id INNER JOIN
